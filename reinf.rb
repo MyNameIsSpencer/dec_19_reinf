@@ -1,7 +1,7 @@
 require 'HTTParty'
 
 datamuse_response = HTTParty.get('https://api.datamuse.com/words?sp=initalize')
-datamuse_json = JSON.parse(datamuse_response)
+datamuse_json = JSON.parse(datamuse_response.body)
 
 options = []
 
